@@ -18,7 +18,7 @@ class App extends Component {
           <h1 className="App-title">Let me pitch you a startup idea.</h1>
         </header>
         <p className="App-intro">
-          It's like {this.props.thisthat.this} for {this.props.thisthat.that}
+          It's like {this.props.thisthat.this} for {this.props.thisthat.that}.
         </p>
         <Button onClick={this.handleButtonClick}>Click</Button>
       </div>
