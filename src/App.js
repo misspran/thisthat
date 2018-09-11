@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {fetchthisthat} from './store'
-import {Button} from 'semantic-ui-react'
+import { Button, Container } from 'semantic-ui-react'
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,7 +12,7 @@ class App extends Component {
     
     console.log(this.props)
     return (
-      <div className="App">
+      <Container>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Let me pitch you a startup idea.</h1>
@@ -20,8 +20,8 @@ class App extends Component {
         <p className="App-intro">
           It's like {this.props.thisthat.this} for {this.props.thisthat.that}.
         </p>
-        <Button onClick={this.handleButtonClick}>Click</Button>
-      </div>
+        <Button onClick={this.handleButtonClick}  color='green'>Refresh</Button>
+      </Container>
     );
   }
 }
