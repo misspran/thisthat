@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {fetchthisthat} from './store'
-import { Button, Container } from 'semantic-ui-react'
+import { Button, Container, Grid, Image } from 'semantic-ui-react'
 import logo from './logo.svg';
 import './App.css';
 
@@ -13,11 +13,21 @@ class App extends Component {
     console.log(this.props)
     return (
       <Container>
-        <h1>Let me pitch you this startup idea.</h1>
+      <Grid stackable >
+      <Grid.Row  verticalAlign='middle' columns={2}>
+      <Grid.Column floated="left" id=".text" stretched>
+        
+        <h1>Let me pitch you this startup idea...</h1>
         <p className="App-intro">
-          What about {this.props.thisthat.this} for {this.props.thisthat.that}.
+          How about <span id="this">{this.props.thisthat.this}</span> for <span id="that">{this.props.thisthat.that}</span>.
         </p>
-        <Button onClick={this.handleButtonClick}  color='green'>Refresh</Button>
+        <Button onClick={this.handleButtonClick}  color='magenta' size='massive'>Refresh</Button>
+        </Grid.Column>
+        <Grid.Column floated="right" padded='vertically'>
+        <Image src="https://i.redd.it/cysuznbvc0py.png" id="giant-head" floated='right' stretched/>
+        </Grid.Column>
+        </Grid.Row>
+        </Grid>
       </Container>
     );
   }
