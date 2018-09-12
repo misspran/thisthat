@@ -79,3 +79,19 @@ margin: 0 0 0;
 .left.floated.column.text{
   width:700px;
 }
+
+.social-share{
+  vertical-align: top;
+  margin-right: 30px;
+  text-align: center;
+  padding: 1.5em 0em 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.share-button{
+  margin:5px;
+}
+.share-button:hover{
+  opacity: .60;
+}
