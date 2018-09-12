@@ -48,11 +48,9 @@ h1{
   font-family: monospace;
 }
 #text{
-  width:700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: left;
+  width: auto;
+  
 }
 .ui.magenta.button{
   background-color: #CA1F5E;
@@ -61,7 +59,7 @@ h1{
   margin: 0;
   text-align: center;
   vertical-align: center;
-  width:40%;
+  width:200px;
 }
 .ui.magenta.button:hover{
   background-color: #3D9970;
@@ -70,7 +68,7 @@ h1{
   margin: 0;
   text-align: center;
   vertical-align: center;
-  width:40%;
+  width:200px;
 }
 .ui.stackable.grid{
 margin: 0 0 0;

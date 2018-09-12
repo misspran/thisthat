@@ -31,7 +31,7 @@ class App extends Component {
       <Container>
       <Grid stackable >
       <Grid.Row  verticalAlign='middle' columns={2}>
-      <Grid.Column floated="left" id=".text" stretched>
+      <Grid.Column floated="left" id="text" stretched>
         
         <h1>Let me pitch you this startup idea...</h1>
         <p className="App-intro">
