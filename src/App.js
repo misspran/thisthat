@@ -33,7 +33,7 @@ class App extends Component {
         <Grid.Row  verticalAlign='middle' columns={2}>
           <Grid.Column floated="left" id="text" stretched>
             <h1>Let me pitch you this startup idea...</h1>
-            <p className="App-intro">
+            <p className="App-intro" onClick={this.handleButtonClick}>
               How about <span id="this">{this.props.thisthat.this}</span> for <span id="that">{this.props.thisthat.that}</span>.
             </p>
             <Button onClick={this.handleButtonClick}  color='magenta' size='massive'>Refresh</Button>
