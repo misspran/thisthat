@@ -22,11 +22,11 @@ import {
 import './App.css';
 
 class App extends Component {
-  componentDidMount =() => this.props.fetchthisthat()
+
+  componentDidMount = () => this.props.fetchthisthat()
   handleButtonClick = () => this.props.fetchthisthat()
+
   render() {
-    
-    console.log(this.props)
     return (
       <Container>
       <Grid stackable >
